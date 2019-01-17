@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+<head>
+    <title>计数器演示</title>
+    <meta charset="utf8" />
+</head>
+<body>
+
+<div id="app">
+    <h1>当前计数器值：</h1>
+    <counter increase src='http://localhost:3000/count' name='view'></counter>
+</div>
+
+</body>
+<script src="js/axios.min.js"></script>
+<script src="js/vue.min.js"></script>
+<script src="js/counter.js"></script>
+<script>
+var app = new Vue({ el: '#app' });
+</script>
+</html>
